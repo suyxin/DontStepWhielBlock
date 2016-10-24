@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/round_rectange_while"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/myTextStyleBlack"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip"
+            android:text="最佳"
+            android:textSize="40sp" />
+
+        <TextView
+            style="@style/myTextStyleWhite"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip"
+            android:text="记录"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/myTextStyleWhite"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="经典模式" />
+
+        <TextView
+            android:id="@+id/tv_baseMaxScore"
+            style="@style/myTextStyleBlack"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/myTextStyleBlack"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="下落模式" />
+
+        <TextView
+            android:id="@+id/tv_downMaxScore"
+            style="@style/myTextStyleWhite"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="200" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/myTextStyleWhite"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="加速挑战" />
+
+        <TextView
+            android:id="@+id/tv_speedMaxScore"
+            style="@style/myTextStyleBlack"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_reback"
+            style="@style/myTextStyleBlack"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip"
+            android:text="返回" />
+
+        <Button
+            android:id="@+id/bt_share"
+            style="@style/myTextStyleWhite"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip"
+            android:text="分享" />
+    </LinearLayout>
+
+</LinearLayout>

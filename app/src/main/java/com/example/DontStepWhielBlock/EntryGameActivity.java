@@ -125,10 +125,10 @@ public class EntryGameActivity extends Activity implements OnClickListener {
 				intent.setAction(Intent.ACTION_SEND);// 发送的意图
 				intent.addCategory(Intent.CATEGORY_DEFAULT);
 				intent.setType("text/plain");
-				intent.putExtra(Intent.EXTRA_TEXT, "我在别踩白块儿游戏中的最佳记录:\n"
-						+ "基本模式：" + baseMaxScore + "\n" + "下落模式："
-						+ downMaxScore + "\n" + "加速挑战：" + speedMaxScore
-						+ "\n想要挑战么？来玩别踩白块儿！！");
+				String contentShare = String.format("我在别踩白块儿游戏中的最佳记录:\n"
+								+ "基本模式：%s \n下落模式:%s\n加速挑战:%s\n想要挑战么？来玩别踩白块儿！！",
+						baseMaxScore, downMaxScore, speedMaxScore);
+				intent.putExtra(Intent.EXTRA_TEXT, contentShare);
 				startActivity(intent);
 			}
 		});
